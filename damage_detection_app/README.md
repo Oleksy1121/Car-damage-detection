@@ -18,13 +18,12 @@ Below is a sample screenshot showcasing the application's functionality:
 ![Sample Application](../img/app_screen.png)
 
 ## Running the Application
-It is recommended to open the application's folder as a project in a development environment such as PyCharm. The project includes a virtual environment (`venv`) that contains all the necessary dependencies.
+It is recommended to open the application's folder as a project in a development environment such as PyCharm. Ensure that all required dependencies are installed.
 
 1. **Open the Project**: In PyCharm, select the application's main folder as the project directory.
-2. **Activate the Virtual Environment**: Ensure the integrated `venv` is active.
-3. **Install Dependencies**: Run the following command in the terminal to install all required packages:
+2. **Install Dependencies**: Run the following command in the terminal to install all required packages:
    ```bash
    pip install -r requirements.txt
-4. **Run the Application**: Execute the following command to launch the application:
+3. **Run the Application**: Execute the following command to launch the application:
    ```bash
    python app.py
