@@ -15,7 +15,7 @@ Aplikacja służy do wykrywania uszkodzeń karoserii samochodowej przy użyciu m
 ## Przykładowe zdjęcie aplikacji
 Poniżej znajduje się przykładowe zdjęcie przedstawiające działanie aplikacji:
 
-![Przykład aplikacji](img/app_screen.png)
+![Przykład aplikacji](../img/app_screen.png)
 
 ## Uruchomienie aplikacji
 Zaleca się otwarcie folderu z aplikacją w środowisku programistycznym PyCharm jako projekt. W folderze projektu znajduje się wirtualne środowisko `venv`, które zawiera wszystkie niezbędne zależności.
