@@ -1,0 +1,4 @@
+opencv-python~=4.10.0.84
+pillow~=10.4.0
+tkinterdnd2~=0.4.2
+ultralytics~=8.2.95
