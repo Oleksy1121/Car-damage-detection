@@ -54,16 +54,16 @@ Below are the training results for the best model configuration (with data augme
 
 - **Precision**: The following graph shows the precision of the model across epochs:
 
-   <img src="img/yolo-precision.png" alt="Precision" width="500" />
+   <img src="img/yolo-precision.png" alt="Precision" width="800" />
 - **Total Loss**: The total loss curve provides insights into how the model's loss decreased over training epochs:
 
-   <img src="img/yolo-total-loss.png" alt="Total Loss" width="500" />
+   <img src="img/yolo-total-loss.png" alt="Total Loss" width="800" />
 - **mAP50**: The mean Average Precision at 50% IoU (mAP50) is shown below, indicating the model's ability to detect and classify damages:
 
-   <img src="img/yolo-map50.png" alt="mAP50" width="500" />
+   <img src="img/yolo-map50.png" alt="mAP50" width="800" />
 - **Confusion Matrix**: The normalized confusion matrix shows the model's performance on the validation dataset, highlighting how well the model differentiates between different damage types:
 
-   <img src="img/yolo-cf.png" alt="Confusion Matrix" width="500" />
+   <img src="img/yolo-cf.png" alt="Confusion Matrix" width="800" />
 
 
 ## Conclusion
@@ -94,13 +94,13 @@ Below are the training results for the Faster R-CNN model, showcasing various pe
 
 - **mAP50**: The following graph shows the mean Average Precision at 50% IoU (mAP50) across iterations, indicating the model's accuracy in detecting and classifying damages:
 
-   <img src="img/faster-rcnn-map50.png" alt="mAP50" width="500" />
+   <img src="img/faster-rcnn-map50.png" alt="mAP50" width="800" />
 - **Total Loss**: The total loss curve illustrates how the loss function values changed throughout the training iterations:
 
-   <img src="img/faster-rcnn-total-loss.png" alt="Total Loss" width="500" />
+   <img src="img/faster-rcnn-total-loss.png" alt="Total Loss" width="800" />
 - **Confusion Matrix**: The normalized confusion matrix represents the model's performance on the validation dataset, showing the accuracy of classification across various damage types:
 
-   <img src="img/faster-rcnn-cf.png" alt="Confusion Matrix" width="500" />
+   <img src="img/faster-rcnn-cf.png" alt="Confusion Matrix" width="800" />
 
 ## Conclusion
 The Faster R-CNN model faced significant challenges with overfitting, both with and without data augmentation. The primary reason for this is the relatively small size of the dataset, which limited the model's ability to learn effectively without overfitting to the training data. Despite attempts to mitigate overfitting through strategies such as setting a low learning rate, adjusting solver steps, and using a gamma value to control learning rate decay, the model's performance did not improve substantially. This highlights the need for a larger dataset when using the Faster R-CNN architecture for similar tasks.
@@ -111,10 +111,10 @@ Below are the comparative results between the YOLO and Faster R-CNN models, show
 
 - **mAP50 Comparison**: This graph illustrates the mean Average Precision at 50% IoU (mAP50) over training epochs for both models, highlighting their accuracy in detecting and classifying damages:
 
-   <img src="img/yolo-vs-faster-map50.png" alt="mAP50 Comparison" width="500" />
+   <img src="img/yolo-vs-faster-map50.png" alt="mAP50 Comparison" width="800" />
 - **Total Loss Comparison**: The following graph compares the total loss between the YOLO and Faster R-CNN models throughout the training process, demonstrating how the loss decreases as each model improves:
 
-   <img src="img/yolo-vs-faster-total-loss.png" alt="Total Loss Comparison" width="500" />
+   <img src="img/yolo-vs-faster-total-loss.png" alt="Total Loss Comparison" width="800" />
 
 
 ## Conclusion
