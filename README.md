@@ -53,13 +53,18 @@ The following table summarizes the different configurations used during the trai
 Below are the training results for the best model configuration (with data augmentation and batch size of -1). The presented metrics include precision, total loss, mAP50, and a confusion matrix.
 
 - **Precision**: The following graph shows the precision of the model across epochs:
-  ![Precision](img/yolo-precision.png)
+
+   <img src="img/yolo-precision.png" alt="Precision" width="500" />
 - **Total Loss**: The total loss curve provides insights into how the model's loss decreased over training epochs:
-  ![Total Loss](img/yolo-total-loss.png)
+
+   <img src="img/yolo-total-loss.png" alt="Total Loss" width="500" />
 - **mAP50**: The mean Average Precision at 50% IoU (mAP50) is shown below, indicating the model's ability to detect and classify damages:
-  ![mAP50](img/yolo-map50.png)
+
+   <img src="img/yolo-map50.png" alt="mAP50" width="500" />
 - **Confusion Matrix**: The normalized confusion matrix shows the model's performance on the validation dataset, highlighting how well the model differentiates between different damage types:
-  ![Confusion Matrix](img/yolo-cf.png)
+
+   <img src="img/yolo-cf.png" alt="Confusion Matrix" width="500" />
+
 
 ## Conclusion
 
@@ -88,12 +93,14 @@ The following table outlines the configurations used for training the Faster R-C
 Below are the training results for the Faster R-CNN model, showcasing various performance metrics, including mAP50, total loss, and a confusion matrix.
 
 - **mAP50**: The following graph shows the mean Average Precision at 50% IoU (mAP50) across iterations, indicating the model's accuracy in detecting and classifying damages:
-  ![mAP50](img/faster-rcnn-map50.png)
-- **Total Loss**: The total loss curve illustrates how the loss function values changed throughout the training iterations:
-  ![Total Loss](img/faster-rcnn-total-loss.png)
-- **Confusion Matrix**: The normalized confusion matrix represents the model's performance on the validation dataset, showing the accuracy of classification across various damage types:
-  ![Confusion Matrix](img/faster-rcnn-cf.png)
 
+   <img src="img/faster-rcnn-map50.png" alt="mAP50" width="500" />
+- **Total Loss**: The total loss curve illustrates how the loss function values changed throughout the training iterations:
+
+   <img src="img/faster-rcnn-total-loss.png" alt="Total Loss" width="500" />
+- **Confusion Matrix**: The normalized confusion matrix represents the model's performance on the validation dataset, showing the accuracy of classification across various damage types:
+
+   <img src="img/faster-rcnn-cf.png" alt="Confusion Matrix" width="500" />
 
 ## Conclusion
 The Faster R-CNN model faced significant challenges with overfitting, both with and without data augmentation. The primary reason for this is the relatively small size of the dataset, which limited the model's ability to learn effectively without overfitting to the training data. Despite attempts to mitigate overfitting through strategies such as setting a low learning rate, adjusting solver steps, and using a gamma value to control learning rate decay, the model's performance did not improve substantially. This highlights the need for a larger dataset when using the Faster R-CNN architecture for similar tasks.
@@ -103,9 +110,11 @@ The Faster R-CNN model faced significant challenges with overfitting, both with 
 Below are the comparative results between the YOLO and Faster R-CNN models, showing the mAP50 and total loss metrics.
 
 - **mAP50 Comparison**: This graph illustrates the mean Average Precision at 50% IoU (mAP50) over training epochs for both models, highlighting their accuracy in detecting and classifying damages:
-  ![mAP50 Comparison](img/yolo-vs-faster-map50.png)
+
+   <img src="img/yolo-vs-faster-map50.png" alt="mAP50 Comparison" width="500" />
 - **Total Loss Comparison**: The following graph compares the total loss between the YOLO and Faster R-CNN models throughout the training process, demonstrating how the loss decreases as each model improves:
-  ![Total Loss Comparison](img/yolo-vs-faster-total-loss.png)
+
+   <img src="img/yolo-vs-faster-total-loss.png" alt="Total Loss Comparison" width="500" />
 
 
 ## Conclusion
