@@ -27,6 +27,24 @@ All images have been annotated using polygons to ensure high precision in labeli
 
 You can access the dataset and more details on Roboflow here: [Roboflow Project Link](https://universe.roboflow.com/cardetecion/car-paint-damage-detection)
 
+Below is an illustration of the dataset categories, showcasing the different types of car body damages used for training:
+
+<img src="img/dataset_categories.png" alt="Dataset Categories" width="800" />
+
+
+## Data Augmentation
+
+To improve the model's generalization and handle the relatively small dataset, data augmentation techniques were applied. Each training example generated 3 augmented versions, using the following techniques:
+
+- **Flip**: Horizontal and Vertical flipping
+- **Rotation**: Random rotation between -15° and +15°
+- **Saturation**: Adjusted between -35% and +35%
+- **Cutout**: 10 random boxes, each covering 2% of the image area
+
+Below is an example of an original image and its augmented version:
+
+<img src="img/augumentation_example.png" alt="Augmentation Example" width="800" />
+
 
 ## Features
 - **Dataset Creation**: High-quality image dataset with precise annotations using polygons.
@@ -119,6 +137,23 @@ Below are the comparative results between the YOLO and Faster R-CNN models, show
 
 ## Conclusion
 In the task of detecting car body damages, the YOLOv8 model outperformed the Faster R-CNN model. This suggests that the YOLOv8 model is better suited for scenarios with limited training data, where its architecture and training strategies can efficiently learn from the available images. The superior performance of YOLOv8 in this case underscores its robustness and ability to generalize well, making it a more suitable choice for our project.
+
+
+## Application Overview
+
+This project includes a Python-based application with a graphical user interface (GUI) built using Tkinter. The application leverages the best-trained YOLOv8 model to make predictions on car body images, identifying various types of defects. It allows users to load images from a selected folder and displays the predictions directly on the images with bounding boxes.
+
+### Key Features:
+- **YOLOv8-based detection**: The application uses the YOLOv8 model to detect defects such as scratches, dents, rust, and paint fading.
+- **Graphical User Interface (GUI)**: Built with Tkinter, the application is user-friendly and allows easy navigation through images using "Next" and "Previous" buttons.
+- **Logs**: The application logs the detected defects and displays them on the interface for user reference.
+- **Real-time prediction display**: Defects are shown on the image with bounding boxes and confidence scores.
+
+### Application Demo
+
+Below is a demonstration of the application in action:
+
+![Application Demo](img/application_demo.gif)
 
 
 ## How to Use
